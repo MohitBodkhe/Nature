@@ -1,0 +1,133 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.158);
+    padding: 30px;
+}
+
+.header{
+    
+    background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.8),rgba(40, 180, 131, 0.8) ),url(https://raw.githubusercontent.com/jonasschmedtmann/advanced-css-course/master/Natours/final-after-S06/img/hero.jpg);
+    background-position:top;
+    background-size: cover;
+    height: 95vh;
+    width: 95vw;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
+    position: relative;
+    border-radius: 10px;
+    
+    
+}
+.logo-box{
+   position: absolute;
+   top: 40px;
+   left: 40px;
+   
+
+}
+.logo{
+    height: 40px;
+}
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.priamry-heading{
+    color: aliceblue;
+    text-transform: uppercase;
+    backface-visibility:hidden;
+    
+}
+
+.heading-main{
+    
+    display: block;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 33px;
+    margin:0px 33px;
+    animation-name: moveleft;
+    animation-duration: 2s;
+ 
+}
+@keyframes moveleft{
+
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+        
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+.heading-sub{
+    display: block;
+    font-size :25px; 
+    font-weight: 300;
+    letter-spacing: 17.4px;
+    animation-name: moveright;
+    animation-duration: 2s; 
+    margin-bottom: 32px; 
+}
+
+@keyframes moveright {
+ 
+    0%{
+        opacity: 0;
+        transform: translateX(100);
+    }
+    80%{
+        transform: translateX(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+
+.btn:link,
+.btn:visited{
+    text-transform: uppercase;
+    text-decoration:none;
+    font-size: 13px;
+    padding: 15px 40px;
+    border-radius: 22px;
+    letter-spacing: 13px;
+    
+}
+
+.btn:hover {
+    transform: translateY(-100px);
+}
+.btn:active {
+    transform: translateY(-12px);
+}
+.btn-white{
+      background-color: aliceblue;
+     color: black; 
+    
+}
+
+
+
